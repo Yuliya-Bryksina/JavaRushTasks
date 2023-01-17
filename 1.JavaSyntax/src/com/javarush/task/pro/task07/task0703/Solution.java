@@ -5,5 +5,8 @@ package com.javarush.task.pro.task07.task0703;
 */
 
 public class Solution {
-    //напишите тут ваш код
+    int a = Integer.MIN_VALUE;
+    long b = Long.MIN_VALUE;
+    short c = Short.MIN_VALUE;
+    byte d = Byte.MIN_VALUE;
 }
