@@ -5,6 +5,7 @@ package com.javarush.task.pro.task09.task0918;
 */
 
 public class Solution {
+
     public static void main(String[] args) {
         String string = "Учиться, учиться и еще раз учиться! ";
 
@@ -13,12 +14,15 @@ public class Solution {
     }
 
     public static StringBuilder addTo(String string, String[] strings) {
-
-        return null;
+        StringBuilder a = new StringBuilder(string);
+        for (int i = 0; i < strings.length ; i++) {
+            a.append(strings[i]);
+        }
+        return a;
     }
 
     public static StringBuilder replace(String string, String str, int start, int end) {
-        //напишите тут ваш код
-        return null;
+        StringBuilder b = new StringBuilder(string);
+        return b.replace(start,end, str);
     }
 }
