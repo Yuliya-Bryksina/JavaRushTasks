@@ -8,8 +8,22 @@ public class Skyscraper {
     public static final String SKYSCRAPER_WAS_BUILD = "Небоскреб построен.";
     public static final String SKYSCRAPER_WAS_BUILD_FLOORS_COUNT = "Небоскреб построен. Количество этажей - ";
     public static final String SKYSCRAPER_WAS_BUILD_DEVELOPER = "Небоскреб построен. Застройщик - ";
+    public int number;
+    public String developer;
 
-    //напишите тут ваш код
+    public Skyscraper() {
+        System.out.println(SKYSCRAPER_WAS_BUILD);
+    }
+
+    public Skyscraper(int number) {
+        this.number = number;
+        System.out.println(SKYSCRAPER_WAS_BUILD_FLOORS_COUNT + number);
+    }
+
+    public Skyscraper(String developer) {
+        this.developer = developer;
+        System.out.println(SKYSCRAPER_WAS_BUILD_DEVELOPER + developer);
+    }
 
     public static void main(String[] args) {
         Skyscraper skyscraper = new Skyscraper();
